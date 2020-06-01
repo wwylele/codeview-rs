@@ -1,0 +1,18 @@
+[package]
+name = "codeview"
+version = "0.1.0"
+authors = ["Weiyi Wang <wwylele@gmail.com>"]
+edition = "2018"
+description = "Rust library for generating CodeView debug information"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/wwylele/codeview-rs"
+keywords = ["debug", "codeview", "pdb", "windows"]
+categories = ["development-tools::debugging"]
+
+
+[dependencies]
+thiserror = "1.0"
+
+[dev-dependencies]
+object = { version = "0.19", features = ["write"], default-features = false }
